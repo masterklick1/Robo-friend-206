@@ -24,7 +24,7 @@ static Arduino_DataBus *bus = new Arduino_ESP32QSPI(
     LCD_CS, LCD_SCLK, LCD_SDIO0, LCD_SDIO1, LCD_SDIO2, LCD_SDIO3);
 
 // col_offset1 = 22 as in the manufacturer's examples
-static Arduino_GFX *gfx = new Arduino_CO5300(
+static Arduino_CO5300 *gfx = new Arduino_CO5300(
     bus, LCD_RESET, 0 /* rotation */, LCD_WIDTH, LCD_HEIGHT, 22, 0, 0, 0);
 
 static TouchFT3168 touch;

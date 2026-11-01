@@ -1,0 +1,7 @@
+out/
+build/
+*.ppm
+*.o
+test_logic
+render_preview
+.DS_Store
